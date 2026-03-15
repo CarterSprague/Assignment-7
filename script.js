@@ -1,5 +1,5 @@
 console.log("Hello World!");
-console.log("Taste Tracker:");
+console.log("My Taste Tracker!:");
 
 // 1. Create an array called favoriteFoods with at least 6 foods you love.
 let favoriteFoods = [
