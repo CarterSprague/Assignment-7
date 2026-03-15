@@ -1,11 +1,24 @@
 console.log("Hello World!");
+console.log("Taste Tracker:");
+
 // 1. Create an array called favoriteFoods with at least 6 foods you love.
-let favoriteFoods = ["Chicken Wings", "Pizza", "Garlic Bread", "Brownies", "Tacos", "Burgers"];
+let favoriteFoods = [
+  "Chicken Wings",
+  "Pizza",
+  "Garlic Bread",
+  "Brownies",
+  "Tacos",
+  "Burgers"
+];
+
+console.log("==== Favorite Foods ====");
 
 // 2. Loop through the list and print: "One of my favorite foods is ______."
 for (let i = 0; i < favoriteFoods.length; i++) {
   console.log(`One of my favorite foods is ${favoriteFoods[i]}.`);
 }
+
+console.log("==== Favorite Food Rankings ====");
 
 // 3. Print out the rating for each food with a ranking like:
 // "My #1 favorite food is Chicken Wings"
@@ -23,9 +36,11 @@ function printFoodRecommendation(foodName) {
   console.log(`Have you ever tried ${foodName}?`);
   console.log(`I always recommend ${foodName} to friends.`);
   console.log(`Trust me — ${foodName} is delicious.`);
+  console.log('You should give it a try!');
 }
 
 // 4b. Call the function at least 3 times
+console.log("==== Food Recommendations ====");
 printFoodRecommendation("Chicken Wings");
 printFoodRecommendation("Pizza");
 printFoodRecommendation("Garlic Bread");
@@ -38,6 +53,8 @@ let friendFavorites = [
   "Samosas", "Macarons", "Quiche", "Pierogi", "Arepas", "Okonomiyaki", "Ceviche", "Brisket", "Bao Buns", "Poutine",
   "Clam Chowder", "Fajitas", "Canelé", "Kimchi", "Tamales", "Omelette", "Biscuits", "Tempura", "Spring Rolls", "Crepes"
 ];
+
+console.log("==== Foods With the Letter A ====");
 
 // 5. Print out only foods that have an "a" in the name.
 for (let i = 0; i < friendFavorites.length; i++) {
@@ -75,6 +92,8 @@ for (let i = 0; i < friendFavorites.length; i++) {
   }
 }
 
+console.log("==== Food Name Length Comparison ====");
+
 // 9. Print both arrays and compare:
 // "There are more long-named foods." OR "There are more short-named foods."
 console.log("Long food names:", longFoodNames);
@@ -90,6 +109,7 @@ if (longFoodNames.length > shortFoodNames.length) {
 
 // 10. STRETCH: Find the longest food name and print:
 // "The longest food name in the list is ______ with ___ characters."
+// Loop through the array to determine which food name has the most characters
 let longestFoodName = friendFavorites[0];
 
 for (let i = 1; i < friendFavorites.length; i++) {
@@ -101,3 +121,5 @@ for (let i = 1; i < friendFavorites.length; i++) {
 console.log(
   `The longest food name in the list is ${longestFoodName} with ${longestFoodName.length} characters.`
 );
+
+console.log("==== End of Taste Tracker Output ====");
